@@ -55,7 +55,7 @@ namespace Vendor_Portal
             elements4.SendKeys(personnumber);
             Thread.Sleep(3000);
 
-            /*IWebElement elements5 = driver.FindElement(By.XPath("//input[@placeholder='Point Person Email']"));
+            IWebElement elements5 = driver.FindElement(By.XPath("//input[@placeholder='Point Person Email']"));
             elements5.Clear();
             elements5.SendKeys(personemail);
             Thread.Sleep(2000);
@@ -100,7 +100,7 @@ namespace Vendor_Portal
             driver.FindElement(By.XPath("//button[contains(text(),'Update')]")).Click();
             Thread.Sleep(3000);
             SeleniumClose();
-            */
+            
 
 
 

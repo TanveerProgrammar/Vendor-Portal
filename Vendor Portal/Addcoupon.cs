@@ -80,6 +80,7 @@ namespace Vendor_Portal
             driver.FindElement(By.XPath("//button[@id='submitForm']")).Click();
             Thread.Sleep(6000);
             SeleniumClose();
+            
 
 
 
