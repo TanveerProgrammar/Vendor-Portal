@@ -81,6 +81,7 @@
     <Compile Include="Storedetails.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="appsettings.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
