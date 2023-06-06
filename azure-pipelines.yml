@@ -36,7 +36,14 @@ steps:
     projects: '**/*Vendor Portal.csproj'
     arguments: '--configuration $(buildConfiguration) --settings appsettings.json'
     
-
+  
+- task: PowerShell@2
+  displayName: 'Read CSV file'
+  inputs:
+    targetType: 'inline'
+    script: |
+      $csvFile = Get-Content -Path 'C:\\Users\\840 G3\\Desktop\\vendor portal\\Vendor Portal\\Vendor Portal\\bin\\Debug\\csv'
+      # Perform further processing on the $csvFile data
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
@@ -44,7 +51,7 @@ steps:
     testPlatformVersion: '16.0' # Specify the desired TestPlatformVersion here
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\Vendor Portal.dll
+     **\Vendor Portal.dll'
     searchFolder: '$(System.DefaultWorkingDirectory)'
     runSettingsFile: ''
     codeCoverageEnabled: false
