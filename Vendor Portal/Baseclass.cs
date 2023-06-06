@@ -20,7 +20,7 @@ namespace Vendor_Portal
             if (Browser == "Chrome")
             {
                 var chromeOptions = new ChromeOptions();
-                chromeOptions.AddArguments("headless");
+                chromeOptions.AddArguments("headless=false");
                 chromeOptions.AddArguments("--incognito");
                 chromeOptions.AddArgument("--start-maximized");
                 driver = new ChromeDriver(chromeOptions);

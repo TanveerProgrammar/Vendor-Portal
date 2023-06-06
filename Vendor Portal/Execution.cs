@@ -153,8 +153,8 @@ namespace Vendor_Portal
             string userlimit = TestContext.DataRow["userlimit"].ToString();
             string minorderamount = TestContext.DataRow["minorderamount"].ToString();
             string maxdiscountamount = TestContext.DataRow["maxdiscountamount"].ToString();
-            addcoupon.Coupons(url,email,pass,storename,status,decomission,creatortype,couponunit,couponvalue,couponscope,couponscopevalue,couponature,
-                coupondevice,userid,description,maxlimit,userlimit,minorderamount,maxdiscountamount);
+            addcoupon.Coupons(url, email, pass, storename, status, decomission, creatortype, couponunit, couponvalue, couponscope, couponscopevalue, couponature,
+                coupondevice, userid, description, maxlimit, userlimit, minorderamount, maxdiscountamount);
 
         }
         [TestMethod]
@@ -182,5 +182,19 @@ namespace Vendor_Portal
             promotion.Promotioncreate(url, email, pass, storename, status, decomission, creatortype, searchby, proid, promotiontype,
                 buyquantity, discountvalue, valuetype, promotionduration, description);
         }
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"Manageproduct.csv", "Manageproduct#csv", DataAccessMethod.Sequential)]
+        [TestCategory("product")]
+        [TestCategory("Positive")]
+        public void Manageproduct()
+        {
+            Manageproduct manageproduct = new Manageproduct();
+            string url = TestContext.DataRow["url"].ToString();
+            string email = TestContext.DataRow["email"].ToString();
+            string pass = TestContext.DataRow["password"].ToString();
+            //string status = TestContext.DataRow["status"].ToString();
+            //manageproduct.product(url, email, pass, status);
+            manageproduct.Productdiscard(url, email, pass);
         }
+    }
 }

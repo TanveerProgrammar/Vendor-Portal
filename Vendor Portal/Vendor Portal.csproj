@@ -29,6 +29,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -59,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Addcoupon.cs" />
     <Compile Include="Baseclass.cs" />
+    <Compile Include="Manageproduct.cs" />
     <Compile Include="Portallogin.cs" />
     <Compile Include="ProductAdd.cs" />
     <Compile Include="Promotion.cs" />
