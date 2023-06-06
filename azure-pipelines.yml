@@ -28,7 +28,14 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@3
+- task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    testPlatformVersion: '16.0' # Specify the desired TestPlatformVersion here
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\Vendor Portal.dll
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    runSettingsFile: ''
+    codeCoverageEnabled: false
