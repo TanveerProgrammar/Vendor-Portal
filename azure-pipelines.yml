@@ -32,3 +32,10 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    testPlatformVersion: '16.0' # Specify the desired TestPlatformVersion here
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\Vendor Portal.dll
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    runSettingsFile: ''
+    codeCoverageEnabled: false
