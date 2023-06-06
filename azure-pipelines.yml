@@ -39,3 +39,22 @@ steps:
     searchFolder: '$(System.DefaultWorkingDirectory)'
     runSettingsFile: ''
     codeCoverageEnabled: false
+  
+- task: PowerShell@2
+  displayName: 'Create appsettings.json'
+  inputs:
+    targetType: 'inline'
+    script: |
+      $configContent = @{
+        ConnectionStrings = @{
+          DataSourceConnection = '$(DataSourceConnectionString)'
+        }
+        
+    
+- task: DotNetCoreCLI@2
+  displayName: 'Run Unit Tests'
+  inputs:
+    command: 'test'
+    projects: '**/*Vendor Portal.csproj'
+    arguments: '--configuration $(buildConfiguration) --settings appsettings.json'
+    
