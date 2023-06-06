@@ -45,7 +45,6 @@ namespace Vendor_Portal
         }
         public void Productdiscard(string url, string email, string password)
         {
-            Actions actions = new Actions(driver);
             IJavaScriptExecutor js = driver as IJavaScriptExecutor;
             driver.Manage().Window.Maximize();
             driver.Url = url;
