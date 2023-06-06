@@ -44,6 +44,8 @@ steps:
     script: |
       $csvFile = Get-Content -Path 'path/to/your/csv/file.csv'
       # Perform further processing on the $csvFile data
+    failOnStderr: true
+
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
