@@ -42,12 +42,9 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-    $csvFiles = Get-ChildItem -Path 'C:\\Users\\840 G3\\Desktop\\vendor portal\\Vendor Portal\\Vendor Portal\\bin\\Debug\\csv'
-      
-      foreach ($csvFile in $csvFiles) {
-      $csvContent = Get-Content -Path $csvFile.FullName
+      $csvFile = Get-Content -Path 'C:\\Users\\840 G3\\Desktop\\vendor portal\\Vendor Portal\\Vendor Portal\\bin\\Debug\\csv'
       # Perform further processing on the $csvFile data
- }
+    failOnStderr: true
 
 - task: VSTest@2
   inputs:
