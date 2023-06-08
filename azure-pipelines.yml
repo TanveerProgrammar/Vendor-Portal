@@ -26,7 +26,12 @@ steps:
     solution: '$(solution)'
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
     platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'    
+    configuration: '$(buildConfiguration)' 
+
+- task: Unitestinstall
+- script: dotnet tool install --global <package-name>
+- script: dotnet build <path-to-solution-or-project>
+- script: dotnet test <path-to-test-project> --logger "trx"
   
 
 - task: VSTest@2
