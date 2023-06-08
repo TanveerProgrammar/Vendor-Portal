@@ -1,0 +1,14 @@
+URL,email,password,status,producttitle,brandname,sellersku,productmodel,barcode,fullfillby,parentcategory,weightselect,dimensionselect,weightvalue,length,width,height,description,feature,image,shippingtemplate,condition,productmrp,listprice,orderamount,saleprice,purchaseamount,quantity,maxorderquantity,monthlymax,dailymaxorderquantity,consumedays,utilize,orderreturntimeperiod,productwarranty,warrantyvalue,ProductTags1,ProductTags2,ProductTags3,searchfilterattribute,searchfilterattributevalue,productattribute,productattributevalue,productmeta1,productmeta2,productmeta3,productmetavalue1,productmetavalue2,productmetavalue3,slugurl
+https://testing.vendor.plentyz.pk/,john5@mailinator.com,Admin@12,Active,Iphone Charger,Iphone,iphone-123-olds,model2312,23123233,I Will Ship this Self ( Vendor FullFilled ),Mobile & Tablets,milligram(s),centimeter,23.2,34.2,20,10,"Product Category: Skin Care
+Product Type: Natural Beauty Cream
+Quantity: 40ml
+Texture: Cream
+Benefit: Anti Wrinkle
+Special Feature: Herbal Active","3 in 1 Action
+100% Natural
+Removes Blackhead & Acne",ic_launcher.png,Default Shipping Class,new,222,220,222,219,222,10,50,60,10,N/A,Personal use,10,Year(s),2,Iphone,Charger,Phone,Phone Features,red,Headphone Jack,red,property,property,property,charger phone,"Product Category: Skin Care
+Product Type: Natural Beauty Cream
+Quantity: 40ml
+Texture: Cream
+Benefit: Anti Wrinkle
+Special Feature: Herbal Active","Iphone,phone,charger",phone

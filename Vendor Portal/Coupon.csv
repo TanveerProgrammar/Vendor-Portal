@@ -1,0 +1,2 @@
+url,email,password,storename,status,decomission,creatortype,couponunit,couponvalue,couponscope,couponscopevalue,couponature,coupondevice,userid,description,maxlimit,userlimit,minorderamount,maxdiscountamount
+https://testing.vendor.plentyz.pk/,john5@mailinator.com,Admin@12,GS Electronics,Active,Non-Decommission,plentys,%,10,Product,12521,Both,All,2312,asadsasaa,4,2,3,4
