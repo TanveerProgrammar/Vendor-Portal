@@ -31,10 +31,10 @@ steps:
 
 
   
-- script: dotnet build $(Build.SourcesDirectory)/$(testProjectPath)
+- script: dotnet build $(Build.SourcesDirectory)/path/to/Vendor Portal.csproj
   displayName: 'Build Solution'
 
-- script: dotnet test $(Build.SourcesDirectory)/$(repositoryUrl)
+- script: dotnet test $(Build.SourcesDirectory)/https://github.com/TanveerProgrammar/Vendor-Portal
   displayName: 'Run Unit Tests'
 
   
