@@ -31,10 +31,10 @@ steps:
 
 
   
-- script: dotnet build $(repositoryUrl)/https://github.com/TanveerProgrammar/Vendor-Portal
+- script: dotnet build $(Build.SourcesDirectory)/$(testProjectPath)
   displayName: 'Build Solution'
 
-- script: dotnet test $(repositoryUrl)/https://github.com/TanveerProgrammar/Vendor-Portal --logger "trx"
+- script: dotnet test $(Build.SourcesDirectory)/$(repositoryUrl)
   displayName: 'Run Unit Tests'
 
   
