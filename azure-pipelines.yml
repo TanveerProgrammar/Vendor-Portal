@@ -28,10 +28,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)' 
 
-- task: Unitestinstall@1
-- script: dotnet tool install --global <package-name>
-- script: dotnet build <path-to-solution-or-project>
-- script: dotnet test <path-to-test-project> --logger "trx"
+- task: UseDotNet@2
+  inputs:
+     script: dotnet tool install --global <package-name>
+     script: dotnet build <path-to-solution-or-project>
+     script: dotnet test <path-to-test-project> --logger "trx"
   
 
 - task: VSTest@2
