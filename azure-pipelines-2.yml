@@ -27,7 +27,16 @@ steps:
     restoreSolution: '**/*.sln'
     feedsToUse: 'select'
     vstsFeed: 'f7d7921b-a9f9-4d36-b4c8-db3ba4fb5363'
+  
 
+- script: dotnet tool install --global NUnit3TestAdapter
+  displayName: 'Install Unit Test Adapter'
+  
+- script: dotnet build $(repositoryUrl)/https://github.com/TanveerProgrammar/Vendor-Portal
+  displayName: 'Build Solution'
+
+- script: dotnet test $(repositoryUrl)/https://github.com/TanveerProgrammar/Vendor-Portal --logger "trx"
+  displayName: 'Run Unit Tests'
 
   
 
