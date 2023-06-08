@@ -25,7 +25,7 @@ namespace Vendor_Portal
             dataSourceConnection = ConfigurationManager.ConnectionStrings["DataSourceConnection"]?.ConnectionString;
         }
         [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"PositiveLogin.csv", "PositiveLogin#csv", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"C:\Users\840 G3\Desktop\vendor portal\Vendor Portal\Vendor Portal\PositiveLogin.csv", "PositiveLogin#csv", DataAccessMethod.Sequential)]
         [TestCategory("Login")]
         [TestCategory("Positive")]
         public void Login()
@@ -40,7 +40,7 @@ namespace Vendor_Portal
 
         }
         [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"Productadd.csv", "Productadd#csv", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"C:\Users\840 G3\Desktop\vendor portal\Vendor Portal\Vendor Portal\Productadd.csv", "Productadd#csv", DataAccessMethod.Sequential)]
         [TestCategory("ProductCreate")]
         [TestCategory("Positive")]
         public void ProductCreation()
@@ -105,7 +105,7 @@ namespace Vendor_Portal
 
         }
         [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"Storedetails.csv", "Storedetails#csv", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"C:\Users\840 G3\Desktop\vendor portal\Vendor Portal\Vendor Portal\Storedetails.csv", "Storedetails#csv", DataAccessMethod.Sequential)]
         [TestCategory("Storedetail")]
         [TestCategory("Positive")]
         public void Storedetails()
@@ -137,7 +137,7 @@ namespace Vendor_Portal
 
         }
         [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"Coupon.csv", "Coupon#csv", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"C:\Users\840 G3\Desktop\vendor portal\Vendor Portal\Vendor Portal\Coupon.csv", "Coupon#csv", DataAccessMethod.Sequential)]
         [TestCategory("Coupon")]
         [TestCategory("Positive")]
         public void Createcoupon()
@@ -167,7 +167,7 @@ namespace Vendor_Portal
 
         }
         [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"Promotion.csv", "Promotion#csv", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"C:\Users\840 G3\Desktop\vendor portal\Vendor Portal\Vendor Portal\Promotion.csv", "Promotion#csv", DataAccessMethod.Sequential)]
         [TestCategory("Promotion")]
         [TestCategory("Positive")]
         public void Createpromotion()
@@ -192,7 +192,7 @@ namespace Vendor_Portal
                 buyquantity, discountvalue, valuetype, promotionduration, description);
         }
         [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"Manageproduct.csv", "Manageproduct#csv", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"C:\Users\840 G3\Desktop\vendor portal\Vendor Portal\Vendor Portal\Manageproduct.csv", "Manageproduct#csv", DataAccessMethod.Sequential)]
         [TestCategory("product")]
         [TestCategory("Positive")]
         public void Manageproduct()
