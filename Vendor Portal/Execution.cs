@@ -17,13 +17,7 @@ namespace Vendor_Portal
             set { instance = value; }
             get { return instance; }
         }
-        public string dataSourceConnection;
-        [SetUp]
-        public void Setup()
-        {
-            // Retrieve the connection string from configuration
-            dataSourceConnection = ConfigurationManager.ConnectionStrings["DataSourceConnection"]?.ConnectionString;
-        }
+        
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"C:\Users\840 G3\Desktop\vendor portal\Vendor Portal\Vendor Portal\PositiveLogin.csv", "PositiveLogin#csv", DataAccessMethod.Sequential)]
         [TestCategory("Login")]
