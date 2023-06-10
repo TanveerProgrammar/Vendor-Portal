@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using NUnit.Framework;
 using System.Configuration;
 
 namespace Vendor_Portal
@@ -9,15 +8,15 @@ namespace Vendor_Portal
     public class Execution
     {
         //Initialize TestContext
-        public Microsoft.VisualStudio.TestTools.UnitTesting.TestContext instance;
+        public TestContext instance;
 
         //Create Getter and Setter Method TestContext
-        public Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
+        public TestContext TestContext
         {
             set { instance = value; }
             get { return instance; }
         }
-        
+
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"C:\Users\840 G3\Desktop\vendor portal\Vendor Portal\Vendor Portal\PositiveLogin.csv", "PositiveLogin#csv", DataAccessMethod.Sequential)]
         [TestCategory("Login")]
